@@ -1,0 +1,54 @@
+# Node modules and logs
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build / dev output
+dist/
+build/
+.vite/
+out/
+
+# Environment files
+.env
+.env.*.local
+.env.local
+
+# Logs & coverage
+logs/
+*.log
+coverage/
+.coverage
+
+# Caches
+.cache/
+.cache-loader/
+*.tmp
+*.temp
+
+# TypeScript build info
+*.tsbuildinfo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Misc
+*.local
+*~
+*.swp
+
+# Keep lockfiles committed (do NOT ignore)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
