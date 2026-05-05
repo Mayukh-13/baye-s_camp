@@ -37,7 +37,8 @@ const infoCards = [
   { label: "Duration", value: "3-4 Months" },
   { label: "Masterclasses", value: "3 / Week" },
   { label: "Doubt Session", value: "1 / Week" },
-  { label: "Cohort Size", value: "Max 25" },
+  { label: "Camp Size", value: "Max 25" },
+  { label: "Meditation", value: "Daily AM / PM (4 months)" },
 ];
 
 const problems = [
@@ -49,30 +50,30 @@ const problems = [
 const fixes = [
   "Structured path from fundamentals to real projects.",
   "First-principles teaching, not copy-paste coding.",
-  "Small cohort + personal doubt support.",
+  "Small group + personal doubt support.",
   "Career clarity from day one of your college journey.",
 ];
 
 const phases = [
   {
-    week: "Phase 01",
-    title: "Math Foundation",
-    detail: "Math for CP/DSA + ML: logic, patterns, problem framing.",
+    week: "Month 1",
+    title: "Math + C++ Fundamentals",
+    detail: "Discrete math & problem framing plus C++/Python fundamentals to build strong foundations.",
   },
   {
-    week: "Phase 02",
-    title: "Programming Core",
-    detail: "Python or C++ fundamentals done right.",
+    week: "Month 2",
+    title: "DSA Fundamentals",
+    detail: "Core data structures and algorithms — arrays through trees, with problem-solving practice.",
   },
   {
-    week: "Phase 03",
-    title: "DSA Buildout",
-    detail: "Arrays to trees and graphs, basic to intermediate.",
+    week: "Month 3",
+    title: "ML Basics",
+    detail: "Data processing, GPU basics, model training workflows and core ML algorithms.",
   },
   {
-    week: "Phase 04",
-    title: "AI + Projects",
-    detail: "Build real-world projects using AI tools like ChatGPT.",
+    week: "Month 4",
+    title: "AI / LLMs + Projects",
+    detail: "Foundations of AI/LLMs and guided project building to ship real work.",
   },
 ];
 
@@ -103,6 +104,7 @@ const programDetails = [
   "Personal doubt support",
   "1 guided project",
   "Final coding test + interview round",
+  "Daily morning & evening meditation sessions for 4 months",
 ];
 
 const FooterCTA = () => (
@@ -130,7 +132,7 @@ const FooterCTA = () => (
         >
           Apply Now
         </a>
-        <p className="text-xs text-slate-300">Next cohorts may include System Design and LLMs-from-scratch tracks.</p>
+        <p className="text-xs text-slate-300">Next camps may include System Design and LLMs-from-scratch tracks.</p>
       </div>
     </div>
   </motion.section>
@@ -165,7 +167,7 @@ export default function BayeCampLandingPage() {
                   </span>
                 </h1>
                 <p className="mt-5 max-w-xl text-sm text-slate-300 sm:text-base">
-                  A premium 3-4 month cohort for students who want to master DSA, math, AI/ML foundations, and
+                  A premium 3-4 month camp for students who want to master DSA, math, AI/ML foundations, and
                   project building before everyone else catches up.
                 </p>
                 <div className="mt-7 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
@@ -191,6 +193,28 @@ export default function BayeCampLandingPage() {
                   </div>
                 ))}
               </motion.div>
+            </motion.div>
+          </Container>
+        </section>
+
+        <section className="pt-20 sm:pt-24">
+          <Container>
+            <SectionTitle
+              kicker="Wellness"
+              title="Daily meditation to sharpen focus"
+              subtitle="Short guided morning and evening sessions to build concentration and reduce stress over the 4-month camp."
+            />
+            <motion.div
+              variants={stagger}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.2 }}
+              className="rounded-2xl border border-white/10 bg-white/[0.02] p-6"
+            >
+              <p className="text-sm text-slate-200">
+                Every camper gets short guided meditation twice daily — morning and evening — for the full
+                4 months. These sessions are designed to improve attention, recovery, and long-term learning capacity.
+              </p>
             </motion.div>
           </Container>
         </section>
